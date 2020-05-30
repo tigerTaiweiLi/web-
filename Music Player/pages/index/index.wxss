@@ -1,0 +1,122 @@
+/**index.wxss**/
+page{
+  height:100%;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+.tabs {
+  /* 实际开发中这里一般不设置高度，有内容撑开就行 */
+  /* height: 50px; */
+  background-color: pink;
+  display: flex;
+}
+
+.tabs .item {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  background-color: #222;
+  color: #ccc;
+  padding: 8px 0;
+}
+
+.tabs .item.active{
+  color: #fff;
+  border-bottom: 2px solid #e9343c;
+}
+.content {
+  flex: 1;
+  background-color: #111214;
+  color: #ccc;
+  /* 小程序有一个scroll-view的组件 */
+  /* overflow: scroll; */
+  overflow: hidden;
+}
+
+.slide image {
+  width: 100%;
+  height: 130px;
+}
+
+.protals {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.protals .item {
+  flex: 1;
+}
+
+.protals .item image {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 10px auto;
+}
+
+.protals .item text {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+}
+
+.list .title {
+  margin: 5px 10px;
+  font-size: 14px;
+}
+
+.list .inner {
+  display: flex;
+  /* 设置内容超出后换行 */
+  flex-wrap: wrap;
+}
+
+.list .inner .item {
+  width: 33.3333%;
+}
+
+.list .inner .item image {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.list .inner .item text {
+  font-size: 14px;
+}
+
+.player {
+  display: flex;
+  height: 50px;
+  background-color: #222;
+}
+
+.poster image {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.info {
+  flex: 1;
+  color: #888;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.info .title {
+  display: block;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.controls image {
+  width: 40px;
+  height: 40px;
+  margin: 5px 2px;
+}
